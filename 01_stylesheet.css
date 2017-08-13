@@ -10,6 +10,10 @@ li {
   text-align: center;
 }
 
+.contents {
+  width: 1170px;
+}
+
 .time {
   text-align: center;
   background-color: orange;
@@ -21,13 +25,31 @@ li {
   font-size: 40px;
 }
 
-.botton {
+.btn-wrapper {
   text-align: center;
 }
 
-.botton-wrapper {
-  text-align: center;
+.btn {
+  margin-top: 10px;
+  padding: 8px 24px;
+  display: inline-block;
+  opacity: 0.8;
 }
-.list {
 
+.start {
+  width: 100px;
+  height: 30px;
+  background-color: #ff6347;
+  color: white;
+}
+
+.stop {
+  width: 100px;
+  height: 30px;
+  background-color: #4169e1;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 1;
 }
