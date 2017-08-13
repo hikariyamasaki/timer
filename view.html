@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title></title>
   <link rel="stylesheet" type="text/css" href="01_stylesheet.css">
+  <script type="text/javascript" src="countdown.js"></script>
 </head>
 <body>
   <h1>timer</h1>
@@ -11,10 +12,10 @@
     <div class="title">
       今は&#12302;開発&#12303;の時間です
     </div>
-    <div class="time">10:00</div>
+    <div class="time" id="timeview">10:00</div>
     <div class="btn-wrapper">
-      <a class="btn start" href="#">start</a>
-      <a class="btn stop" href="#">stop</a>
+      <a class="btn start" onclick="startTimer()">start</a>
+      <a class="btn stop" onclick="stopTimer()">stop</a>
     </div>
     <div class="to_do_list">
       <div class="list one">アイディア出し</div>
