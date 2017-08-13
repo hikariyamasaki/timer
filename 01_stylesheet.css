@@ -1,0 +1,33 @@
+body {
+}
+
+li {
+  list-style: none;/* list-styleプロパティを用いて、li要素の黒点を取り除く */
+}
+
+.title {
+  font-size: 50px;
+  text-align: center;
+}
+
+.time {
+  text-align: center;
+  background-color: orange;
+  font-size: 100px;
+  padding: 20px 40px;
+}
+
+.to_do_list {
+  font-size: 40px;
+}
+
+.botton {
+  text-align: center;
+}
+
+.botton-wrapper {
+  text-align: center;
+}
+.list {
+
+}
