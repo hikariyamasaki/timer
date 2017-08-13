@@ -20,6 +20,14 @@ function stopTimer() {
   clearInterval(intervalState); // タイマーの動きを止める
 }
 
+function resetTimer(){
+  if (isRunning == true) {
+    return;
+  }
+  remaintime = 600;
+  writeTime();
+}
+
 function countdown() {
   remaintime -= 1;
   writeTime();
@@ -30,6 +38,6 @@ function writeTime() {
 
   var minites = Math.floor(remaintime / 60);
   var seconds = remaintime - minites*60;
-  timeview.innerHTML = String(minites) + ":" + String(seconds);
+  timeview.innerHTML = String(("0"+minites).slice(-2)) + ":" + String(("0"+seconds).slice(-2));
 
 }
