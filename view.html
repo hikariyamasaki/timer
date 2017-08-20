@@ -5,6 +5,7 @@
   <title></title>
   <link rel="stylesheet" type="text/css" href="01_stylesheet.css">
   <script type="text/javascript" src="countdown.js"></script>
+
 </head>
 <body>
   <h1>timer</h1>
@@ -18,12 +19,13 @@
       <a class="btn stop" onclick="stopTimer()">stop</a>
       <a class="btn reset" onclick="resetTimer()">reset</a>
     </div>
-    <div class="to_do_list">
-      <div class="list one">アイディア出し</div>
-      <div class="list two">要件定義</div>
-      <div class="list three">開発</div>
-      <div class="list four"></div>
-    </div>
+
+
+    <table id="schedule_table">
+      <!-- tableの中身はschedule.jsに書いているよ -->
+    </table>
+    <script type="text/javascript" src="schedule.js"></script>
+
   </div>
 </body>
 </html>
