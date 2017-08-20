@@ -21,7 +21,8 @@ li {
   text-align: center;
   background-color: #f0ba32;
   font-size: 150px;
-  padding: 20px 40px;
+  /*padding: 20px 40px;*/
+  height: 180px;
 }
 
 .to_do_list {
@@ -96,4 +97,9 @@ td {
 #nowtask {
   font-weight: bold;
   border: solid 5px #ff8888;
+}
+
+#otsu {
+  font-size: 100px;
+  padding: 20px;
 }
