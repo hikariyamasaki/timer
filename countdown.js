@@ -63,5 +63,5 @@ function writeTime() {
 function writeOtukare() {
   timerview = document.getElementById("timeview");
 
-  timeview.innerHTML = "お疲れ様でした";
+  timeview.innerHTML = "<div id='otsu'>お疲れ様でした</div>";
 }
