@@ -15,9 +15,12 @@ li {
 }
 
 .time {
+  color: #e9f5e9;
+  /*font-weight: bold;*/
+  font-family: Impact;
   text-align: center;
-  background-color: orange;
-  font-size: 100px;
+  background-color: #f0ba32;
+  font-size: 150px;
   padding: 20px 40px;
 }
 
@@ -27,6 +30,7 @@ li {
 
 .btn-wrapper {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .btn {
@@ -34,12 +38,14 @@ li {
   padding: 8px 24px;
   display: inline-block;
   opacity: 0.8;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .start {
   width: 100px;
   height: 30px;
-  background-color: #ff6347;
+  background-color: #ff8888;
   color: white;
   opacity: 1.0;
 }
@@ -47,7 +53,15 @@ li {
 .stop {
   width: 100px;
   height: 30px;
-  background-color: #4169e1;
+  background-color: #9c83ff;
+  color: white;
+  opacity: 1.0;
+}
+
+.next {
+  width: 100px;
+  height: 30px;
+  background-color: #f9c265;
   color: white;
   opacity: 1.0;
 }
@@ -69,11 +83,17 @@ table {
   border-collapse: collapse;
 }
 td {
-  border: solid 1px;
-  padding: 5px 5px;
+  border: solid 1px #c2c2c2;
+  padding: 10px 10px;
+  padding-right: 15px;
 }
 
 .table_index {
-  background-color: #ebe951;
+  background-color: #ffeac7;
   text-align: center;
+}
+
+#nowtask {
+  font-weight: bold;
+  border: solid 5px #ff8888;
 }
