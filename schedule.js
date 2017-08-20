@@ -22,7 +22,7 @@ function setTable() {
   // tableの各行をセット
   for (var i = 0; i < index.length; i++) {
     if (i==indexNow){
-      tableContents += '<tr style="background-color:red;"><td>'+index[i]+'</td><td>'+time[i]+'分</td><td>'+contents[i]+'</td></tr>'
+      tableContents += '<tr id="nowtask"><td>'+index[i]+'</td><td>'+time[i]+'分</td><td>'+contents[i]+'</td></tr>'
     }else{
       tableContents += '<tr><td>'+index[i]+'</td><td>'+time[i]+'分</td><td>'+contents[i]+'</td></tr>'
     }
