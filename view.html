@@ -5,6 +5,7 @@
   <title></title>
   <link rel="stylesheet" type="text/css" href="01_stylesheet.css">
   <script type="text/javascript" src="countdown.js"></script>
+
 </head>
 <body>
   <h1>timer</h1>
@@ -18,29 +19,13 @@
       <a class="btn stop" onclick="stopTimer()">stop</a>
       <a class="btn reset" onclick="resetTimer()">reset</a>
     </div>
-    <table>
-      <tr class="table_index">
-        <td>項目</td><td>時間</td><td>内容</td>
-      </tr>
-      <tr>
-        <td>アイディア出し</td><td>20分</td><td>何を作るかを決める</td>
-      </tr>
-      <tr>
-        <td>要件定義</td><td>時間</td><td>どういう機能が必要か決める</td>
-      </tr>
-      <tr>
-        <td>UIデザイン</td><td>20分</td><td>内容</td>
-      </tr>
-      <tr>
-        <td>簡略化</td><td>時間</td><td>実装できるレベルに機能・デザインを簡略化する</td>
-      </tr>
-      <tr>
-        <td>UIデザイン2回目</td><td>時間</td><td>実装できるレベルに機能・デザインを簡略化する</td>
-      </tr>
-      <tr>
-        <td>開発</td><td>40分</td><td>内容</td>
-      </tr>
+
+
+    <table id="schedule_table">
+      <!-- tableの中身はschedule.jsに書いているよ -->
     </table>
+    <script type="text/javascript" src="schedule.js"></script>
+
   </div>
 </body>
 </html>
