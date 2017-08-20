@@ -23,7 +23,7 @@ function stopTimer() {
 function resetTimer(){
   stopTimer();
   indexNow = 0
-  remaintime = time[indexNow]
+  remaintime = Number(time[indexNow])*60
   setTable();
   writeTime();
 }
@@ -36,7 +36,7 @@ function nextIndex() {
     resetTimer()
     writeOtukare()
   }else{
-    remaintime = Number(time[indexNow])*60 + 1
+    remaintime = Number(time[indexNow])*60
     writeTime()
   }
 }
@@ -56,7 +56,7 @@ function writeTime() {
 
   var minites = Math.floor(remaintime / 60);
   var seconds = remaintime - minites*60;
-  timeview.innerHTML = String(("0"+minites).slice(-2)) + ":" + String(("0"+seconds).slice(-2));
+  timeview.innerHTML = String(("0"+minites).slice(-3)) + ":" + String(("0"+seconds).slice(-2));
 
 }
 
