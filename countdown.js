@@ -21,11 +21,9 @@ function stopTimer() {
 }
 
 function resetTimer(){
-  if (isRunning == true) {
-    return;
-  }
-  remaintime = 600;
+  stopTimer();
   indexNow = 0
+  remaintime = time[indexNow]
   setTable();
   writeTime();
 }
@@ -33,15 +31,14 @@ function resetTimer(){
 function nextIndex() {
   indexNow += 1
   setTable()
-
   //全ての項目を終了したらお疲れ様
   if (indexNow == index.length) {
-    stopTimer()
     resetTimer()
     writeOtukare()
+  }else{
+    remaintime = Number(time[indexNow])*60 + 1
+    writeTime()
   }
-
-  remaintime = Number(time[indexNow])*60 + 1
 }
 
 function countdown() {
