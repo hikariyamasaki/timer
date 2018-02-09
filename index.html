@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="01_stylesheet.css">
+  <script type="text/javascript" src="countdown.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="responsible.css">
+</head>
+<body>
+  <header>
+    <h1>Timer</h1>
+  </header>
+  <div class="contets">
+    <!-- <div class="title">
+      今は&#12302;開発&#12303;の時間です
+    </div> -->
+    <div class="time" id="timeview">10:00</div>
+    <div class="btn-wrapper">
+      <div class="btn start" onclick="startTimer()">Start</div>
+      <div class="btn stop" onclick="stopTimer()">Stop</div>
+      <div class="btn next" onclick="nextIndex()">Next</div>
+      <div class="btn reset" onclick="resetTimer()">Reset</div>
+    </div>
+
+      <table id="schedule_table">
+        <!-- tableの中身はschedule.jsに書いているよ -->
+      </table>
+    <script type="text/javascript" src="schedule.js"></script>
+  </div>
+</body>
+</html>
