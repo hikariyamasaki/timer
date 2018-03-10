@@ -51,7 +51,6 @@ function addSchedule() {
 }
 
 function deleteRow(btn) {
-  console.log(btn.value)
   row =  parseInt(btn.value)
   index.splice(row,1)
   time.splice(row,1)
