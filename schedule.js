@@ -20,17 +20,17 @@ var indexNow = 0
 
 
 // schTableにセットするTableの内容のHTMLソースを作る
-var tableContents = '<tr class="table_index"><td>項目</td><td>時間</td><td>内容</td></tr>'
+var tableContents = '<tr class="table_index"><td>項目</td><td>時間</td><td>内容</td><td></td></tr>'
 
 
 function setTable() {
   // tableの各行をセット
   for (var i = 0; i < index.length; i++) {
     if (i==indexNow){
-      tableContents += '<tr id="nowtask"><td>'+index[i]+'</td><td>'+time[i]+'分</td><td>'+contents[i]+'</td></tr>'
-    }else{
-      tableContents += '<tr><td>'+index[i]+'</td><td>'+time[i]+'分</td><td>'+contents[i]+'</td></tr>'
+      tableContents += '<tr id="nowtask">'
     }
+    tableContents += '<td>'+index[i]+'</td><td>'+time[i]+'分</td><td>'+contents[i]+'</td>'
+    tableContents += '<td><button value="' + String(i) + '" onclick="deleteRow(this)">削除</button></td></tr>'
   }
   //schTable.innerHTML = tableContents
 
@@ -40,7 +40,23 @@ function setTable() {
   parentTable.innerHTML = tableContents
 
   // tableContentsの内容をリセット
-  tableContents = '<tr class="table_index"><td>項目</td><td>時間</td><td>内容</td></tr>'
+  tableContents = '<tr class="table_index"><td>項目</td><td>時間</td><td>内容</td><td></td></tr>'
+}
+
+function addSchedule() {
+  index.push(document.schedule_add.task.value)
+  time.push(document.schedule_add.time.value)
+  contents.push(document.schedule_add.contents.value)
+  setTable()
+}
+
+function deleteRow(btn) {
+  console.log(btn.value)
+  row =  parseInt(btn.value)
+  index.splice(row,1)
+  time.splice(row,1)
+  contents.splice(row,1)
+  setTable()
 }
 
 setTable()
