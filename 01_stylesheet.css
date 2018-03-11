@@ -5,6 +5,12 @@ li {
   list-style: none;/* list-styleプロパティを用いて、li要素の黒点を取り除く */
 }
 
+header h1{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
 .title {
   font-size: 50px;
   text-align: center;
@@ -29,15 +35,32 @@ li {
   font-size: 40px;
 }
 
+
+
 .btn-wrapper {
   text-align: center;
-  margin-bottom: 20px;
+  width: 60%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 670px) {
+  .btn {
+    width: 100%;
+  }
+
+  .btn-wrapper {
+    display: block;
+  }
+
+
 }
 
 .btn {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   padding: 8px 24px;
-  display: inline-block;
+  /* display: inline-block; */
   opacity: 0.8;
   font-size: 20px;
   font-weight: bold;
@@ -80,8 +103,11 @@ li {
 }
 
 table {
-  /*margin-left: 50px;*/
+  margin-top: 10px;
   border-collapse: collapse;
+  margin-right: auto;
+  margin-left: auto;
+  width: 60%;
 }
 td {
   border: solid 1px #c2c2c2;
@@ -93,6 +119,8 @@ td {
   background-color: #ffeac7;
   text-align: center;
 }
+
+
 
 #nowtask {
   font-weight: bold;
@@ -106,4 +134,9 @@ td {
 
 .schedule_add_table {
   margin-top: 10px;
+}
+
+
+.add_work {
+  text-align: center;
 }

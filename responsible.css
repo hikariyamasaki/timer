@@ -1,0 +1,20 @@
+/* タブレット向けレイアウト */
+@media (max-width: 1000px) {
+
+
+
+}
+
+/* モバイル向けレイアウト */
+@media (max-width: 670px) {
+  .btn {
+    width: 25%;
+    margin-bottom: 5px;
+  }
+
+  table {
+    width: 90%;
+    font-size: 15px;
+  }
+
+}

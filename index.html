@@ -4,30 +4,33 @@
   <meta charset="utf-8">
   <title></title>
   <link rel="stylesheet" type="text/css" href="01_stylesheet.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <script type="text/javascript" src="countdown.js"></script>
-
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="responsible.css">
 </head>
 <body>
-  <h1>timer</h1>
-  <div class="contents">
+  <header>
+    <h1><i class="fas fa-stopwatch"></i>Timer</h1>
+  </header>
+  <div class="contets">
     <!-- <div class="title">
       今は&#12302;開発&#12303;の時間です
     </div> -->
     <div class="time" id="timeview">10:00</div>
     <div class="btn-wrapper">
-      <a class="btn start" onclick="startTimer()">start</a>
-      <a class="btn stop" onclick="stopTimer()">stop</a>
-      <a class="btn next" onclick="nextIndex()">next</a>
-      <a class="btn reset" onclick="resetTimer()">reset</a>
+      <div class="btn start" onclick="startTimer()">Start</div>
+      <div class="btn stop" onclick="stopTimer()">Stop</div>
+      <div class="btn next" onclick="nextIndex()">Next</div>
+      <div class="btn reset" onclick="resetTimer()">Reset</div>
     </div>
 
-
-    <table id="schedule_table">
-      <!-- tableの中身はschedule.jsに書いているよ -->
-    </table>
+      <table id="schedule_table">
+        <!-- tableの中身はschedule.jsに書いているよ -->
+      </table>
     <script type="text/javascript" src="schedule.js"></script>
 
-    <h2>工程追加</h2>
+    <h2 class="add_work">工程追加</h2>
 
     <form name="schedule_add">
       <table class="schedule_add_table">
@@ -40,7 +43,6 @@
         </tr>
       </table>
     </form>
-
   </div>
 </body>
 </html>
