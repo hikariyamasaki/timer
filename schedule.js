@@ -44,9 +44,10 @@ function setTable() {
 }
 
 function addSchedule() {
-  index.push(document.schedule_add.task.value)
-  time.push(document.schedule_add.time.value)
-  contents.push(document.schedule_add.contents.value)
+  var row = parseInt(document.schedule_add.row.value)
+  index.splice(row,0,document.schedule_add.task.value)
+  time.splice(row,0,document.schedule_add.time.value)
+  contents.splice(row,0,document.schedule_add.contents.value)
   setTable()
 }
 
